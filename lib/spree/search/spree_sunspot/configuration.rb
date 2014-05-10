@@ -20,7 +20,7 @@ module Spree
 
           # Product Options for use with Faceting
           #   gets turned to #{value}_option for the facet
-          self.option_facets = [:color, :size]
+          self.option_facets = [:size]
 
           # Product Properties for use with Faceting
           #   gets turned to #{value}_property for the facet
