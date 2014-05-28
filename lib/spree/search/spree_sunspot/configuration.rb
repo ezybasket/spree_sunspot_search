@@ -26,7 +26,7 @@ module Spree
           # Product Properties for use with Faceting
           #   gets turned to #{value}_property for the facet
           # product properties retrieved using the new Spree::Product#property
-          self.property_facets = [:brand]
+          self.property_facets = []
 
           self.fields = [
             # boost gives the product title a bit of a priority
@@ -36,6 +36,7 @@ module Spree
           ]
 
           # custom facets defined as methods directly on Spree::Product
+#          self.other_facets = [:brand]
           self.other_facets = []
 
           # facets that have already been created and should be displayed in the suggestions partial
